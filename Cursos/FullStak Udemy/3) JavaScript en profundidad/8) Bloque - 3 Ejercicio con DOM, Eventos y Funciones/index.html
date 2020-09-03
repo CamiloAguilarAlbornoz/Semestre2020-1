@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+	<!----- Ficheros JavaScript ------>
+	<script type="text/javascript" src="js/Formulario.js"></script>
+</head>
+<body>
+	<h1>Ejercicio DOM, Eventos y Funciones</h1>
+	<hr/>
+	<div class="box">
+		<form action="" method="POST" id="form" onsubmit="return false;">
+			<label for="textName">Nombre : </label>
+			<br/>
+			<input type="text" name="textName" id="name" />
+			<span id="errName" style="display: none;"></span>
+			<br/>
+			<br/>
+			<label for="textLastName">Apellidos : </label>
+			<br/>
+			<input type="text" name="textLastName" id="lastName" />
+			<span id="errLastName"></span>
+			<br/>
+			<br/>
+			<label for="textAge">Edad : </label>
+			<br/>
+			<input type="number" name="textAge" id="age" />
+			<span id="errAge"></span>
+			<br/>
+			<br/>
+			<p>
+				<input type="submit" name="submitSend" value="Enviar" id="submit">
+			</p>
+		</form>
+	</div>
+	<hr/>
+	<!--- Aqui se mostraran los datos creados --->
+	<table id="dashed" border="1" style="display: none;">
+		<!---<tr>
+			<th colspan="3">Informacion Usuario</th>
+		</tr>--->
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+	</table>
+</body>
+</html>

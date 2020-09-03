@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Formulario de Peliculas</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/ManagerForm.js"></script>
+</head>
+<body>
+	<h1>Formulario de Peliculas</h1>
+	<hr/>
+	<form id="formMovie" onsubmit="return false;">
+		<p>
+			<input type="text" name="title" id="titleMovie" placeholder="Ingresar el titulo"/>
+		</p>
+		<p>
+			<input type="text" name="country" id="countryMovie" placeholder="Ingresar el pais"/>
+		</p>
+		<p>
+			<input type="number" name="year" id="yearMovie" placeholder="Ingresar el año"/>
+		</p>
+		<p>
+			<input type="submit" name="sub" value="Registrar"/>
+		</p>
+	</form>
+	<button id="buscar">Buscar</button>
+	<p>
+		<button id="eliminar">Eliminar</button>
+	</p>
+	<hr/>
+	<table id="tableMovie" border="1">
+		<tr>
+			<th colspan="3">Tabla de Peliculas</th>
+		</tr>
+		<tr>
+			<th>Titulo</th>
+			<th>Pais</th>
+			<th>Año</th>
+		</tr>
+	</table>
+</body>
+</html>
